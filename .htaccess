@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /
+
+# If the requested resource exists as a file or directory, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, send all requests to the front controller
+RewriteRule ^(.*)$ index.php [L]
+
+# Handle immigration-news URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^immigration-news/([^/]+)/?$ immigration-news.php [L]
+
+# Blog rewrites
+RewriteRule ^blog/([^/]+)/?$ resources/blog-detail.php?slug=$1 [L]
+RewriteRule ^blog/category/([^/]+)/?$ resources/blog.php?category=$1 [L]
+RewriteRule ^blog/page/([0-9]+)/?$ resources/blog.php?page=$1 [L]
+RewriteRule ^blog/category/([^/]+)/page/([0-9]+)/?$ resources/blog.php?category=$1&page=$2 [L]
+
+# Other rules... 
