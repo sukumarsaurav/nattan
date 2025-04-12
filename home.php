@@ -175,7 +175,7 @@ include('includes/header.php');
 </section>
 
 <!-- Success Stories Section -->
-<section class="section success-stories" id="success-stories" style="background-color: #FDF7EF; padding: 80px 0;">
+<section class="section success-stories" id="success-stories" style="background-color: #f7f8fc; padding: 80px 0;">
     <div class="container">
         <h2 class="section-title" style="font-size: 2.5rem; color: var(--color-burgundy); text-align: center; margin-bottom: 10px;">Check what's our client</h2>
         <h2 class="section-title" style="font-size: 2.5rem; color: var(--color-burgundy); text-align: center; margin-bottom: 60px;">say about us!</h2>

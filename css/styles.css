@@ -2,12 +2,13 @@
 
 /* Variables for color scheme */
 :root {
-    --color-cream: #FEF9E1;
-    --color-gold: #eef8ff;
-    --color-red: #e51f13;
+    --color-cream: #FFFFFF;
+    --color-gold: #f7f8fc;
+    --color-red: #042167;
     --color-burgundy: #042167;
     --color-dark: #333333;
     --color-light: #FFFFFF;
+    --color-burgundy-dark: #031849;
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Lora', serif;
 }
@@ -39,7 +40,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-red);
+    color: var(--color-burgundy-dark);
 }
 
 ul, ol {
@@ -76,7 +77,7 @@ img {
     display: block;
     width: 80px;
     height: 3px;
-    background: var(--color-red);
+    background: var(--color-burgundy);
     margin: 15px auto;
 }
 
@@ -107,7 +108,7 @@ img {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-red);
+    background-color: var(--color-burgundy-dark);
     color: var(--color-light);
 }
 
@@ -169,16 +170,14 @@ img {
 }
 
 .service-card {
-    background-color: var(--color-cream);
+    background-color: var(--color-gold);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .service-image {
@@ -217,7 +216,6 @@ img {
     border-radius: 10px;
     padding: 30px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .tool-icon {
@@ -243,10 +241,9 @@ img {
 }
 
 .story-card {
-    background-color: var(--color-cream);
+    background-color: var(--color-gold);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     margin: 10px;
 }
 
@@ -270,7 +267,7 @@ img {
 }
 
 .story-visa-type {
-    color: var(--color-red);
+    color: var(--color-burgundy);
     font-size: 0.9rem;
 }
 
@@ -281,7 +278,7 @@ img {
 
 /* Contact Section */
 .contact {
-    background-color: var(--color-cream);
+    background-color: var(--color-gold);
 }
 
 .contact-grid {
@@ -439,7 +436,6 @@ img {
         flex-direction: column;
         padding: 30px;
         transition: left 0.3s ease;
-        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
     }
     
     .nav-menu.active {
@@ -477,13 +473,12 @@ img {
 }
 
 /* Dropdown Menu Styles */
-/* .nav-item .dropdown-menu {
+.nav-item .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
     background: var(--color-light);
     min-width: 320px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     padding: 8px 0;
     opacity: 0;
@@ -508,7 +503,7 @@ img {
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #f8f9fa;
+    background-color: var(--color-gold);
 }
 
 .dropdown-title {
@@ -522,4 +517,4 @@ img {
     font-size: 12px;
     color: #6c757d;
     line-height: 1.4;
-}  */
+}

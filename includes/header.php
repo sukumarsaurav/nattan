@@ -12,7 +12,8 @@ if (!isset($base_url)) {
     if (strpos($current_dir, '/visa-types') !== false || 
         strpos($current_dir, '/blog') !== false || 
         strpos($current_dir, '/resources') !== false ||
-        strpos($current_dir, '/assessment-calculator') !== false) {
+        strpos($current_dir, '/assessment-calculator') !== false ||
+        strpos($current_dir, '/consultant') !== false) {
         $base_url = '..';
     } else if (strpos($current_dir, '/immigration-news') !== false) {
         $base_url = ''; // Root-relative for virtual directory
@@ -57,6 +58,7 @@ $base = isset($base_path) ? $base_path : $base_url;
     <link rel="stylesheet" href="<?php echo $base; ?>/css/assessment-drawer.css">
     <link rel="stylesheet" href="<?php echo $base; ?>/css/news.css">
     <link rel="stylesheet" href="<?php echo $base; ?>/css/faq.css">
+    <link rel="stylesheet" href="<?php echo $base; ?>/css/consultant.css">
         
     <!-- Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -250,8 +252,7 @@ $base = isset($base_path) ? $base_path : $base_url;
             </nav>
             
             <div class="header-actions book-button">
-                <a href="<?php echo $base; ?>/consultant.php" class="btn btn-primary">Book Consultation</a>
-               
+                <a href="<?php echo $base; ?>/consultant/consultant.php" class="btn btn-primary">Book Consultation</a>
             </div>
         </div>
     </header>

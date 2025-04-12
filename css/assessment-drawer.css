@@ -3,14 +3,13 @@
     position: fixed;
     top: 40%;
     right: 0px;
-    background-color: var(--color-red);
+    background-color: var(--color-burgundy);
     color: var(--color-light);
     border-radius: 5px 5px 0 0;
     padding: 12px 24px;
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     z-index: 999;
     transition: all 0.3s ease;
@@ -19,7 +18,7 @@
 }
 
 .assessment-tool-button:hover {
-    background-color: var(--color-burgundy);
+    background-color: var(--color-burgundy-dark);
     right: 4px;
 }
 
@@ -57,7 +56,6 @@
     z-index: 2000;
     overflow-y: auto;
     transition: right 0.3s ease;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
 }
 
@@ -103,14 +101,15 @@
 .assessment-item a {
     display: block;
     padding: 15px;
-    background-color: var(--color-cream);
+    background-color: var(--color-gold);
     color: var(--color-dark);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .assessment-item a:hover {
-    background-color: var(--color-gold);
+    background-color: var(--color-burgundy);
+    color: var(--color-light);
     transform: translateY(-3px);
 }
 

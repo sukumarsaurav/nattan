@@ -102,6 +102,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
                             <span>FAQ Manager</span>
                         </a>
                     </li>
+                    <li class="<?php echo $current_page === 'consultants.php' || $current_page === 'consultant_profile.php' ? 'active' : ''; ?>">
+                        <a href="consultants.php">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Consultants</span>
+                        </a>
+                    </li>
                     <li class="<?php echo $current_page === 'settings.php' ? 'active' : ''; ?>">
                         <a href="settings.php">
                             <i class="fas fa-cog"></i>
